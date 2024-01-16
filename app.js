@@ -16,30 +16,28 @@ myRadio.addEventListener("click", () => {
         myRadio.style.border = "8px solid rgb(0, 132, 255)";
         myCircle.style.display = "block";
 
-// *************************tamamlanmamis hover**********************************
+        myRadioContainer.addEventListener("mouseover", () => {
+            myRadio.style.border = "8px solid rgba(0, 132, 255, 0.5)";
+            myCircle.style.backgroundColor = "rgba(0, 132, 255, 0.5)";
+        });
 
-        // myRadioContainer.addEventListener("mouseenter", () => {
-        //     myRadio.style.border = "8px solid rgba(0, 132, 255, 0.5)";
-        //     myCircle.style.backgroundColor = "rgba(0, 132, 255, 0.5)";
-        // });
-
-        // myRadioContainer.addEventListener("mouseout", () => {
-        //         myRadio.style.border = "8px solid rgb(0, 132, 255)";
-        //         myCircle.style.backgroundColor = "rgb(0, 132, 255)";
-        // });
+        myRadioContainer.addEventListener("mouseout", () => {
+                myRadio.style.border = "8px solid rgb(0, 132, 255)";
+                myCircle.style.backgroundColor = "rgb(0, 132, 255)";
+        });
 
     } else {
         j = true;
         myRadio.style.border = "4px solid rgb(133, 133, 133)";
         myCircle.style.display = "none";
 
-        // myRadioContainer.addEventListener("mouseenter", () => {
-        //     myRadio.style.border = "4px solid rgba(133, 133, 133, 0.5)"
-        // });
+        myRadioContainer.addEventListener("mouseover", () => {
+            myRadio.style.border = "4px solid rgba(133, 133, 133, 0.5)"
+        });
 
-        // myRadioContainer.addEventListener("mouseout", () => {
-        //     myRadio.style.border = "4px solid rgb(133, 133, 133)"
-        // })
+        myRadioContainer.addEventListener("mouseout", () => {
+            myRadio.style.border = "4px solid rgb(133, 133, 133)"
+        })
     }
 })
 

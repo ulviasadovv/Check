@@ -58,6 +58,10 @@ body{
         box-shadow: 9px 5px 12px rgb(255, 255, 255), -9px -5px 12px rgb(138, 138, 138);
         cursor: pointer;
 
+        &:hover{
+            border: 4px solid rgba(133, 133, 133, 0.5);
+        }
+
         #radio-circle{
             width: 50px;
             height: 50px;
